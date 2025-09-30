@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos Lens - The Room of Portraits</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape">📷</div>
+        <div class="shape">🔥</div>
+        <div class="shape">📷</div>
+    </div>
+
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="/assets/logo.png" alt="Lumos Lens Logo" class="logo-img">
+                <div class="logo-text">
+                    <div class="logo-title">LUMOS LENS</div>
+                    <div class="logo-subtitle">The Room of Portraits</div>
+                </div>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="/assets/logo.png" alt="Lumos Lens" class="hero-logo">
+            <h1>Illuminating Stories Through Portraits</h1>
+            <p>Where Light Meets Legacy</p>
+            <button class="cta-button" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">
+                Explore Our Work
+            </button>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Our Portfolio</h2>
+        <p class="section-subtitle">Each portrait tells a unique story</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Timeless Elegance</h3>
+                    <p>Professional portrait capturing grace and confidence</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Natural Light Magic</h3>
+                    <p>Outdoor session with golden hour glow</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Studio Perfection</h3>
+                    <p>Controlled lighting for flawless results</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Character Study</h3>
+                    <p>Capturing authentic personality and charm</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Editorial Glamour</h3>
+                    <p>Fashion-forward portrait photography</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Contemporary Vision</h3>
+                    <p>Modern approach to classic portraiture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section" style="background: linear-gradient(to bottom, #F5EAD8, #E8DCC8);">
+        <h2 class="section-title">About Lumos Lens</h2>
+        <p class="section-subtitle">Lighting the way to timeless portraits</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p><i class="fa-solid fa-fire"></i> <strong>Born from Passion</strong><br>
+                Lumos Lens was founded on the belief that every portrait should illuminate the soul of its subject. Like a torch cutting through darkness, we bring light and clarity to every photograph we create.</p>
+                <br>
+                <p><i class="fa-solid fa-camera"></i> <strong>Our Philosophy</strong><br>
+                We don't just take photos—we craft visual stories. Each session is a collaboration where your personality shines through, captured in moments of authentic beauty and genuine emotion.</p>
+                <br>
+                <p><i class="fa-solid fa-wand-sparkles"></i> <strong>The Experience</strong><br>
+                From the moment you step into our room of portraits, you're not just a client—you're family. Our studio combines cutting-edge technology with a warm, welcoming atmosphere where magic happens naturally.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80" alt="Photography Studio">
+                <div class="about-logo-overlay">
+                    <img src="/assets/logo.png" alt="Lumos Lens Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Let's Create Together</h2>
+        <p class="section-subtitle">Ready to illuminate your story?</p>
+        
+        <div class="contact-container">
+            <div class="contact-card">
+                <div style="font-size: 4rem; margin-bottom: 2rem;"><i class="fa-regular fa-envelope"></i></div>
+                <h3 style="color: #8B3A2C; font-size: 2rem; margin-bottom: 1rem;">Get In Touch</h3>
+                <p style="font-size: 1.2rem; color: #C15A3A; margin-bottom: 2rem; line-height: 1.8;">
+                    Whether you're looking for a professional headshot, family portrait, or creative session, 
+                    we'd love to hear from you. Let's create something extraordinary together.
+                </p>
+                
+                <div class="contact-email-box">
+                    <div style="color: #F4A639; font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: bold;">Email Us At</div>
+                    <a href="mailto:lumoslens17@gmail.com">lumoslens17@gmail.com</a>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <a href="mailto:lumoslens17@gmail.com" class="cta-button" style="display: inline-block; text-decoration: none;">
+                        Send Us an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="/assets/logo.png" alt="Lumos Lens" class="footer-logo">
+        <h3 style="color: #E8DCC8; font-size: 1.5rem; margin-bottom: 0.5rem;">LUMOS LENS</h3>
+        <p style="color: #F4A639; margin-bottom: 1rem;">The Room of Portraits</p>
+        <p>&copy; 2025 Lumos Lens. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:lumoslens17@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
